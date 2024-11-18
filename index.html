@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone User Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Phone User Survey</h1>
+        <p id="description">Please fill out this survey if you are a phone user in Bangladesh.</p>
+
+        <form id="survey-form">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age" required>
+
+            <label for="dropdown">Select your phone brand:</label>
+            <select id="dropdown" name="phone-brand">
+                <option value="Samsung">Samsung</option>
+                <option value="Apple">Apple</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="OnePlus">OnePlus</option>
+                <option value="Realme">Realme</option>
+            </select>
+
+            <label id="upgrade">How often do you upgrade your phone?</label>
+
+            <div class="radio-group">
+               
+                <label><input type="radio" name="upgrade-frequency" value="yearly" required> Yearly</label>
+                <label><input type="radio" name="upgrade-frequency" value="every-2-years"> Every 2 Years</label>
+                <label><input type="radio" name="upgrade-frequency" value="rarely"> Rarely</label>
+            </div>
+
+            <label id="features">What features are important to you?</label>
+
+            <div class="checkbox-group">
+               
+                <label><input type="checkbox" name="features" value="camera"> Camera</label>
+                <label><input type="checkbox" name="features" value="battery"> Battery Life</label>
+                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="display"> Display Quality</label>
+                <label><input type="checkbox" name="features" value="storage"> Storage Capacity</label>
+            </div>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Share your thoughts..."></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

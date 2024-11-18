@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+#survey-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+h1#title {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+p#description {
+    margin-bottom: 1.3em;
+    color: #666;
+    font-size: 1.1em;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.8em;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.radio-group, .checkbox-group {
+    display: flex; /* Use flexbox to align items side by side */
+    flex-wrap: wrap; /* Ensure they wrap if the container is too narrow */
+    margin-bottom: 15px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.radio-group label, .checkbox-group label {
+    font-weight: normal;
+    display: inline-flex; /* Align radio button and label inline */
+    align-items: center; /* Vertically center the radio button and label */
+    margin-right: 15px; /* Space between items */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; /* Space between the radio/checkbox and its label */
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #1442a5;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    #survey-form {
+        padding: 1em;
+    }
+
+    h1#title {
+        font-size: 1.5em;
+    }
+}
